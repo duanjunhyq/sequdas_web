@@ -50,9 +50,10 @@ $results = $query->first();
 $email_act=$results->email_act;
 
 ?>
+
 <!-- Navigation -->
 <div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
-	<div class="container">
+	<div class="container-fluid">
 		<!-- Brand and toggle get grouped for better mobile display -->
 		<div class="navbar-header ">
 			<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-top-menu-collapse">
@@ -63,6 +64,7 @@ $email_act=$results->email_act;
 			</button>
 			
 		</div>
+
 		<div class="collapse navbar-collapse navbar-top-menu-collapse navbar-right">
 			<ul class="nav navbar-nav ">
 				<?php if($user->isLoggedIn()){ //anyone is logged in?>
